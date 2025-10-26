@@ -168,7 +168,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="text-4xl">👵</div>
+              <div className="text-4xl"></div>
               <div>
                 <h1 className="text-xl lg:text-2xl font-bold text-primary">Дом большой мамочки</h1>
                 <p className="text-xs text-muted-foreground">Лучшая шаурма в городе</p>
