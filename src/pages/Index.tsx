@@ -339,7 +339,7 @@ export default function Index() {
                   <div className="text-5xl mb-4">🕐</div>
                   <h3 className="text-2xl font-bold mb-3">Время доставки</h3>
                   <p className="text-muted-foreground mb-2">• 90-100 минут</p>
-                  <p className="text-muted-foreground mb-2">• По городу: 40-60 минут</p>
+                  <p className="text-muted-foreground mb-2"></p>
                   <p className="text-muted-foreground">• Самовывоз: 15-20 минут</p>
                 </CardContent>
               </Card>
