@@ -356,7 +356,7 @@ export default function Index() {
                 <CardContent className="pt-6">
                   <div className="text-5xl mb-4">🎁</div>
                   <h3 className="text-2xl font-bold mb-3">Стоимость доставки</h3>
-                  <p className="text-muted-foreground mb-2">• От 1000₽ — бесплатно</p>
+                  <p className="text-muted-foreground mb-2">•100 рублей в черте города по поводу отдаленных районов утоняйте у оператора.</p>
                   <p className="text-muted-foreground mb-2">• От 500₽ — 100₽</p>
                   <p className="text-muted-foreground">• До 500₽ — 150₽</p>
                 </CardContent>
