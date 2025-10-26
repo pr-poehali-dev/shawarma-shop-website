@@ -99,11 +99,7 @@ const menuCategories = [
   }
 ];
 
-const promos = [
-  { title: 'Комбо на двоих', description: '2 Шаурмамы + Картофель фри + 2 напитка = 999₽', discount: '-20%' },
-  { title: 'Счастливые часы', description: 'Скидка 15% с 14:00 до 16:00', discount: '-15%' },
-  { title: 'День рождения?', description: 'Десерт в подарок при заказе от 1500₽', discount: '🎁' },
-];
+
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState('home');
@@ -223,19 +219,37 @@ export default function Index() {
 
         <section id="promos" className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">🎉 Акции и спецпредложения</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {promos.map((promo, idx) => (
-                <Card key={idx} className="relative overflow-hidden group hover:scale-105 transition-transform">
-                  <div className="absolute top-4 right-4 z-10">
-                    <Badge className="bg-accent text-accent-foreground text-lg px-3 py-1">{promo.discount}</Badge>
+            <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">🎁 Бонусная программа</h2>
+            <div className="max-w-5xl mx-auto">
+              <Card className="overflow-hidden hover:scale-[1.02] transition-transform">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                  <div className="relative h-[300px] lg:h-auto">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/c849faab-0613-4b7d-8257-783610aa2e47/files/6f8af139-ea4c-4aab-8e72-6fbb7aa2d7f7.jpg" 
+                      alt="Бонусная программа"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <CardContent className="pt-6">
-                    <h3 className="text-2xl font-bold mb-3">{promo.title}</h3>
-                    <p className="text-muted-foreground text-lg">{promo.description}</p>
+                  <CardContent className="pt-8 pb-8 flex flex-col justify-center">
+                    <div className="text-6xl mb-6 text-center lg:text-left">⭐</div>
+                    <h3 className="text-3xl font-bold mb-4 text-center lg:text-left">Ваши персональные бонусы</h3>
+                    <div className="space-y-4 text-center lg:text-left">
+                      <div className="flex items-center justify-center lg:justify-start space-x-3">
+                        <Badge className="bg-primary text-primary-foreground text-2xl px-4 py-2">1 балл = 1 рубль</Badge>
+                      </div>
+                      <p className="text-xl text-muted-foreground leading-relaxed">
+                        Накапливайте баллы с каждого заказа и оплачивайте ими следующие покупки
+                      </p>
+                      <div className="pt-4">
+                        <Button size="lg" className="bg-primary hover:bg-primary/90 w-full lg:w-auto">
+                          <Icon name="Gift" className="mr-2" size={20} />
+                          Узнать свой баланс
+                        </Button>
+                      </div>
+                    </div>
                   </CardContent>
-                </Card>
-              ))}
+                </div>
+              </Card>
             </div>
           </div>
         </section>
