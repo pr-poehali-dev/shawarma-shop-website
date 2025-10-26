@@ -438,14 +438,56 @@ export default function Index() {
         </section>
       </main>
 
-      <footer className="bg-card border-t border-border py-8">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="text-4xl">👵</div>
-            <h3 className="text-2xl font-bold text-primary">Дом большой мамочки</h3>
+      <footer className="bg-card border-t border-border py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div className="text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
+                <div className="text-4xl">👵</div>
+                <h3 className="text-2xl font-bold text-primary">Дом большой мамочки</h3>
+              </div>
+              <p className="text-muted-foreground">Лучшая шаурма в городе с 2014 года</p>
+            </div>
+
+            <div className="text-center">
+              <h4 className="font-semibold mb-4">Приложения</h4>
+              <div className="flex flex-col space-y-2">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center justify-center space-x-2">
+                  <Icon name="Apple" size={20} />
+                  <span>iOS App</span>
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center justify-center space-x-2">
+                  <Icon name="Smartphone" size={20} />
+                  <span>Android App</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="text-center md:text-right">
+              <h4 className="font-semibold mb-4">Мы в соцсетях</h4>
+              <div className="flex justify-center md:justify-end space-x-4 mb-4">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Icon name="Facebook" size={24} />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Icon name="Instagram" size={24} />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Icon name="MessageCircle" size={24} />
+                </a>
+              </div>
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Политика конфиденциальности
+              </a>
+            </div>
           </div>
-          <p className="text-muted-foreground mb-4">Лучшая шаурма в городе с 2018 года</p>
-          <p className="text-sm text-muted-foreground">© 2024 Дом большой мамочки. Все права защищены.</p>
+
+          <div className="border-t border-border pt-6 text-center">
+            <p className="text-sm text-muted-foreground mb-2">
+              <a href="#" className="hover:text-primary transition-colors">Сайт и приложение для ресторанов</a>
+            </p>
+            <p className="text-sm text-muted-foreground">© 2014–2025 Дом большой мамочки</p>
+          </div>
         </div>
       </footer>
     </div>
