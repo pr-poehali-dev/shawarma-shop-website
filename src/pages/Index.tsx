@@ -444,7 +444,7 @@ export default function Index() {
                 <div className="text-4xl">👵</div>
                 <h3 className="text-2xl font-bold text-primary">Дом большой мамочки</h3>
               </div>
-              <p className="text-muted-foreground">Лучшая шаурма в городе с 2014 года</p>
+              <p className="text-muted-foreground">Самая вкусная и лучшая шаурма в городе!</p>
             </div>
 
             <div className="text-center">
