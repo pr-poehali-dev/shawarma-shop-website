@@ -115,10 +115,12 @@ const menuCategories = [
     name: 'Напитки',
     emoji: '🥤',
     items: [
-      { name: 'Кола', price: 100, description: '0.5л' },
-      { name: 'Фанта', price: 100, description: '0.5л' },
-      { name: 'Вода', price: 70, description: '0.5л' },
-      { name: 'Сок', price: 120, description: '0.3л' },
+      { name: 'Морс ягодный 300мл.', price: 70, description: '300 гр.' },
+      { name: 'Добрый Кола 500мл.', price: 120, description: '' },
+      { name: 'Палпи в ассортименте 450мл.', price: 120, description: '' },
+      { name: 'Добрый кола 1л.', price: 190, description: '' },
+      { name: 'Энергетический напиток в ассортименте 440мл.', price: 199, description: '' },
+      { name: 'Морс ягодный 1л.', price: 200, description: '1000 гр.' },
     ]
   },
   {
